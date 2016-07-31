@@ -7,7 +7,7 @@
 #import os.path
 #include $os.path.join($sickbeard.PROG_DIR, "data/interfaces/default/inc_top.tmpl")
 
-<form name="processForm" method="post" action="processEpisode">
+<form name="processForm" method="post" action="processEpisodeAsync">
 Enter the folder containing the episode: <input type="text" name="dir" id="episodeDir" #if $sickbeard.TV_DOWNLOAD_DIR then "value=\"" + $sickbeard.TV_DOWNLOAD_DIR + "\"" else ""# size="50" />
 <input type="hidden" name="method" value="Manual"> <input type="submit" class="btn" value="Process" />
 <br /><br />
